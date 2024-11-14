@@ -1,12 +1,17 @@
 ---
 import { type CollectionEntry } from "astro:content";
 
+import { getImage } from "astro:assets"
+import heroImage from "../assets/img/nollalinja_1124_hero.jpg"
+
 
 interface Props {
 	content: CollectionEntry<"main">;
 	title: String;
 }
 const { content, title } = Astro.props;
+
+const optHeroImage = await getImage({ src: heroImage })
 ---
 
 
@@ -22,10 +27,21 @@ const { content, title } = Astro.props;
 	</head>
 	<body>
 		<nav class="flex items-center justify-between w-full p-3 md:p-4">
-			{content.data.s1heading}
+			
 		</nav>
-		<div class="h-[85vh] w-full bg-cover bg-center bg-norepeat">
-
+		<div class=`h-[85vh] w-full bg-[url('${optHeroImage.src}')] bg-cover bg-center bg-norepeat`>
+			<div class="flex-col ">
+				<div class="">
+					{content.data.s1heading}
+				</div>
+				<div class="">
+					{content.data.s1display}
+				</div>
+				<div class="">
+					{optHeroImage.src}
+					{content.data.s1subtitle}
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

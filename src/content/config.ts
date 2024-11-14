@@ -5,7 +5,7 @@ const main = defineCollection({
 	schema: z.object({
 		s1heading: z.string(),
 		s1display: z.string(),
-    s1title: z.string(),
+    s1subtitle: z.string(),
     s2trailerheading: z.string(),
     s2fulllengthheading: z.string(),
 
@@ -13,17 +13,17 @@ const main = defineCollection({
     s3body1: z.string(),
     s3body2: z.string(),
 
-    s4heading: z.string(),
-    s4body1: z.string(),
-    s4body2: z.string(),
+    s4heading: z.string().optional(),
+    s4body1: z.string().optional(),
+    s4body2: z.string().optional(),
 
-    s5heading: z.string(),
-    s5body1: z.string(),
-    s5body2: z.string(),
+    s5heading: z.string().optional(),
+    s5body1: z.string().optional(),
+    s5body2: z.string().optional(),
 
-    s6heading: z.string(),
-    s6body1: z.string(),
-    s6body2: z.string(),
+    s6heading: z.string().optional(),
+    s6body1: z.string().optional(),
+    s6body2: z.string().optional(),
 
     s7heading: z.string(),
     s7subheading: z.string(),
@@ -33,5 +33,5 @@ const main = defineCollection({
 });
 
 export const collections = {
-	main,
+	'main': main,
 };
