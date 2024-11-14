@@ -1,47 +1,78 @@
 ---
 import { type CollectionEntry } from "astro:content";
 
-import { getImage } from "astro:assets"
-import heroImage from "../assets/img/nollalinja_1124_hero.jpg"
+import { getImage } from "astro:assets";
+import { Vimeo } from "@astro-community/astro-embed-vimeo";
+import heroImage from "../assets/img/nollalinja_1124_hero.jpg";
 
+import Timer from "../components/Timer.astro";
 
 interface Props {
-	content: CollectionEntry<"main">;
-	title: String;
+  content: CollectionEntry<"main">;
+  title: String;
 }
 const { content, title } = Astro.props;
 
-const optHeroImage = await getImage({ src: heroImage })
+const optHeroImage = await getImage({ src: heroImage });
 ---
-
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<nav class="flex items-center justify-between w-full p-3 md:p-4">
-			
-		</nav>
-		<div class=`h-[85vh] w-full bg-[url('${optHeroImage.src}')] bg-cover bg-center bg-norepeat`>
-			<div class="flex-col ">
-				<div class="">
-					{content.data.s1heading}
-				</div>
-				<div class="">
-					{content.data.s1display}
-				</div>
-				<div class="">
-					{optHeroImage.src}
-					{content.data.s1subtitle}
-				</div>
-			</div>
-		</div>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-[#0c0c0c]">
+    <div
+      class="h-[85vh] bg-cover bg-center bg-norepeat text-center flex flex-row items-center py-16"
+      style={`background-image: url('${optHeroImage.src}')`}
+    >
+      <div class="w-full flex flex-col justify-between h-full font-display">
+        <div class=""></div>
+        <div class="">
+          <div
+            class="text-[2vmin] text-ivory drop-shadow-lg uppercase font-display font-bold leading-none tracking-widest"
+          >
+            {content.data.s1heading}
+          </div>
+          <div
+            class="text-[17vw] text-ivory font-condensed uppercase leading-none text font-bold drop-shadow-lg"
+          >
+            {content.data.s1display}
+          </div>
+          <div
+            class="text-[2vmin] tracking-wide uppercase text-ivory font-display font-semibold drop-shadow-lg"
+          >
+            {content.data.s1subtitle}
+          </div>
+        </div>
+
+        <div class="w-full">
+          <Timer />
+        </div>
+      </div>
+    </div>
+  </body>
+  <div class="p-8 py-8 md:py-32 flex flex-row justify-center font-display">
+    <div class="max-w-4xl">
+      <div class="text-[4vmax] text-white font-bold uppercase">
+        {content.data.s2trailerheading}
+      </div>
+      <div
+        class="text-[2vmax] text-white font-bold uppercase leading-[1.13] py-4"
+      >
+        {content.data.s3heading}
+      </div>
+      <div class="text-[1.3vmax] font-sans text-white leading-tight py-4">
+        {content.data.s3heading}
+      </div>
+    </div>
+  </div>
+  <div class="w-full p-4">
+    <Vimeo id="https://vimeo.com/1024212175/" />
+  </div>
 </html>

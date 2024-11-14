@@ -1,3 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wght" 100;
+  }
+}
+
+@font-face {
+  font-family: "Kurdis", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: bolder;
+  src: url("./assets/woff/KurdisTest-CondensedExtraBold.woff");
+  src: url("./assets/woff/KurdisTest-ExtraWideExtraBold.woff");
+}
+
+@font-face {
+  font-family: "Kurdis", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: bold;
+  src: url("./assets/woff/KurdisTest-CondensedExtraBold.woff");
+  src: url("./assets/woff/KurdisTest-ExtraWideBold.woff");
+}
+
+@font-face {
+  font-family: "Kurdis", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: bold;
+  font-stretch: condensed;
+  src: url("./assets/woff/KurdisTest-CondensedExtraBold.woff");
+}
+

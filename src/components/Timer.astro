@@ -1,0 +1,58 @@
+<!doctype html>
+<div id="countdown" class="text-white">
+  <ul
+    class="flex flex-row font-display justify-center gap-2 text-white font-extrabold text-[10vmin] leading-none"
+  >
+    <li>
+      <div id="days" class=""></div>
+      <div class="text-blue uppercase font-bold text-[2vmin]">days</div>
+    </li>
+    <div class="">:</div>
+    <li>
+      <div id="hours"></div>
+      <div class="text-blue uppercase font-bold text-[2vmin]">Hours</div>
+    </li>
+    <div class="">:</div>
+    <li>
+      <div id="minutes"></div>
+      <div class="text-blue uppercase font-bold text-[2vmin]">Minutes</div>
+    </li>
+    <div class="">:</div>
+    <li>
+      <div id="seconds"></div>
+      <div class="text-blue uppercase font-bold text-[2vmin]">Seconds</div>
+    </li>
+  </ul>
+</div>
+
+<script>
+  (function () {
+    const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
+
+    const countDown = new Date("2024-11-26").getTime(),
+      x = setInterval(function () {
+        const now = new Date().getTime(),
+          distance = countDown - now;
+        // @ts-ignore
+        (document.getElementById("days").innerText = Math.floor(
+          distance / day
+        )),
+          // @ts-ignore
+          (document.getElementById("hours").innerText = Math.floor(
+            (distance % day) / hour
+          )),
+          // @ts-ignore
+          (document.getElementById("minutes").innerText = Math.floor(
+            (distance % hour) / minute
+          )),
+          // @ts-ignore
+          (document.getElementById("seconds").innerText = Math.floor(
+            (distance % minute) / second
+          ));
+        //seconds
+      }, 1000);
+  })();
+</script>
