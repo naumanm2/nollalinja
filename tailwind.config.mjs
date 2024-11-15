@@ -8,8 +8,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ["KurdisTest-ExtraWideExtraBold", "sans-serif"],
-        kondensed: ['KurdisTest-CondensedExtraBold', "sans-serif"],
+        display: ["Kurdis", "sans-serif"],
+        condensed: ["KurdisCondensed", "sans-serif"],
       },
       keyframes: {
         fade: {

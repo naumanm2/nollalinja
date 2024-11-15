@@ -35,18 +35,18 @@ const { content, title } = Astro.props;
   <body class="bg-[#0c0c0c]">
     <nav class="">
       <div
-        class="flex justify-end p-4 sm:p-8 md:p-12 lg:p-16 fixed z-[1000] w-full"
+        class="flex justify-end p-2 sm:p-6 md:p-9 lg:p-12 fixed z-[1000] w-full"
       >
         {
           content.slug == "trailer_fi" ? (
             <a href="/">
-              <div class="flex items-center px-4 py-2 mx-2 text-xs font-bold uppercase text-white line-clamp-none md:text-lg">
+              <div class="flex items-center px-4 py-2 text-xs font-display font-bold uppercase text-white line-clamp-none md:text-lg">
                 in english
               </div>
             </a>
           ) : (
             <a href="/fi">
-              <div class="flex items-center px-4 py-2 mx-2 text-xs font-bold uppercase text-white line-clamp-none md:text-lg">
+              <div class="flex items-center px-4 py-2 text-xs font-display font-bold uppercase text-white line-clamp-none md:text-lg">
                 suomeksi
               </div>
             </a>
@@ -71,7 +71,7 @@ const { content, title } = Astro.props;
             {content.data.s1heading}
           </div>
           <div
-            class="text-[min(17vw,320px)] text-ivory uppercase leading-none flex flex-row justify-center font-kondensed drop-shadow-lg"
+            class="text-[min(17vw,320px)] text-ivory uppercase leading-none flex flex-row justify-center font-condensed drop-shadow-lg"
           >
             {content.data.s1display}
           </div>
@@ -103,15 +103,15 @@ const { content, title } = Astro.props;
         </div>
       </div>
     </div>
-    <div class="p-8 md:py-32 flex flex-row justify-center font-display">
+    <div class="p-4 md:py-32 flex flex-row justify-center">
       <div class="max-w-[1536px]">
         <div
-          class="text-[4vmax] text-white font-kondensed uppercase leading-[1.13]"
+          class="text-[4vmax] text-white font-display uppercase leading-[1.13]"
         >
           {content.data.s3heading}
         </div>
         <div
-          class="text-[2vmax] text-white font-kondensed uppercase leading-[1.13] pt-4 md:pt-8 max-w-screen-lg"
+          class="text-[2vmax] text-white font-display uppercase leading-[1.13] pt-4 md:pt-8 max-w-screen-lg"
         >
           {content.data.s3body1}
         </div>
@@ -122,10 +122,10 @@ const { content, title } = Astro.props;
         </div>
       </div>
     </div>
-    <div class="w-full p-8">
+    <div class="w-full p-4">
       <Vimeo id="https://vimeo.com/1024212175/" />
     </div>
-    <footer class="p-8 py-8 md:py-32 flex justify-center">
+    <footer class="p-4 py-8 md:py-32 flex justify-center">
       <div
         class="max-w-[1536px] flex flex-col md:flex-row justify-center gap-12"
       >
