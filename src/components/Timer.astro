@@ -16,7 +16,7 @@ const { days, hours, minutes, seconds } = Astro.props;
   >
     <li class="flex flex-col justify-end">
       <div id="days" class=""></div>
-      <div class="text-blue uppercase font-bold text-[2vw] md:text-[1vw] mx-4">
+      <div class="text-blue uppercase font-bold text-[2vw] md:text-[1vw] mx-2 md:mx-4">
         {days}
       </div>
     </li>
@@ -24,7 +24,7 @@ const { days, hours, minutes, seconds } = Astro.props;
     <li class="flex flex-col justify-end">
       <div id="hours"></div>
       <div
-        class="text-blue uppercase font-bold text-[1vw] md:text-[min(1vw,48px)] mx-4"
+        class="text-blue uppercase font-bold text-[2vw] md:text-[1vw] mx-2 md:mx-4"
       >
         {hours}
       </div>
@@ -32,14 +32,14 @@ const { days, hours, minutes, seconds } = Astro.props;
     <div class="">:</div>
     <li class="flex flex-col justify-end">
       <div id="minutes"></div>
-      <div class="text-blue uppercase font-bold text-[1vw] md:text-[1vw] mx-4">
+      <div class="text-blue uppercase font-bold text-[2vw] md:text-[1vw] mx-2 md:mx-4">
         {minutes}
       </div>
     </li>
     <div class="">:</div>
     <li class="flex flex-col justify-end">
       <div id="seconds"></div>
-      <div class="text-blue uppercase font-bold text-[1vw] md:text-[1vw] mx-4">
+      <div class="text-blue uppercase font-bold text-[2vw] md:text-[1vw] mx-2 md:mx-4">
         {seconds}
       </div>
     </li>
