@@ -12,11 +12,11 @@ const { days, hours, minutes, seconds } = Astro.props;
 <!doctype html>
 <div id="countdown" class="text-white">
   <ul
-    class="flex flex-row font-condensed justify-center gap-0 md:gap-2 text-white text-[min(18vw,96px)] leading-none"
+    class="flex flex-row font-condensed justify-center gap-0 md:gap- text-white text-[min(15vw,96px)] leading-none"
   >
     <li class="flex flex-col justify-end">
       <div id="days" class=""></div>
-      <div class="text-blue uppercase text-[max(2vw,16px)] md:text-[min(2vw,24px)] mx-2 md:mx-4">
+      <div class="text-blue uppercase font-sans font-bold text-[max(2.1vw,13px)] lg:text-[min(2.1vw,18px)]">
         {days}
       </div>
     </li>
@@ -24,7 +24,7 @@ const { days, hours, minutes, seconds } = Astro.props;
     <li class="flex flex-col justify-end">
       <div id="hours"></div>
       <div
-        class="text-blue uppercase text-[max(2vw,16px)] md:text-[min(2vw,24px)] mx-2 md:mx-4"
+        class="text-blue uppercase font-sans font-bold text-[max(2.1vw,13px)] lg:text-[min(2.1vw,18px)]"
       >
         {hours}
       </div>
@@ -32,14 +32,14 @@ const { days, hours, minutes, seconds } = Astro.props;
     <div class="">:</div>
     <li class="flex flex-col justify-end">
       <div id="minutes"></div>
-      <div class="text-blue uppercase text-[max(2vw,16px)] md:text-[min(2vw,24px)] mx-2 md:mx-4">
+      <div class="text-blue uppercase font-sans font-bold  text-[max(2.1vw,13px)] lg:text-[min(2.1vw,18px)]">
         {minutes}
       </div>
     </li>
     <div class="">:</div>
     <li class="flex flex-col justify-end">
       <div id="seconds"></div>
-      <div class="text-blue uppercase text-[max(2vw,16px)] md:text-[min(2vw,24px)] mx-2 md:mx-4">
+      <div class="text-blue uppercase font-sans font-bold tracking-tight text-[max(2.1vw,13px)] lg:text-[min(2.1vw,18px)]">
         {seconds}
       </div>
     </li>

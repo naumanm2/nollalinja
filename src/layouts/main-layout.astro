@@ -72,7 +72,7 @@ const { content, title } = Astro.props;
             {content.data.s1heading}
           </div>
           <div
-            class="text-[min(24vw,320px)] text-ivory uppercase font-condensed leading-none flex flex-row justify-center drop-shadow-lg"
+            class="text-[min(24vw,320px)] text-ivory uppercase font-condensed tracking-tighter leading-none flex flex-row justify-center drop-shadow-lg"
           >
             {content.data.s1display}
           </div>
@@ -130,17 +130,11 @@ const { content, title } = Astro.props;
       <div
         class="max-w-[1536px] flex flex-col md:flex-row justify-center items-center gap-12"
       >
-        <div class="max-w-24 flex items-center">
-          <Image src={thl} alt="logo of outshine" />
-        </div>
         <div class="max-w-32 flex items-center">
           <Image src={viaplay} alt="logo of viaplay" />
         </div>
         <div class="max-w-32 flex items-center">
           <Image src={outshine} alt="logo of outshine" />
-        </div>
-        <div class="max-w-32 flex items-center">
-          <Image src={nollalinja} alt="logo of nollalinja" />
         </div>
       </div>
     </footer>
