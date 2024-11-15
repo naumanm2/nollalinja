@@ -14,19 +14,22 @@
 }
 
 @font-face {
-  font-family: "KurdisCondensed", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-weight:bold;
-  src: url("/fonts/KurdisTest-CondensedExtraBold.woff");
-}
-@font-face {
-  font-family: "Kurdis", sans-serif;
+  font-family: "KurdisCondensed";
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: bold;
-  src: url("/fonts/KurdisTest-ExtraWideBold.woff");
+  src: url("/woff/KurdisTest-CondensedExtraBold.woff") format("woff"),
+  url("/woff2/KurdisTest-CondensedExtraBold.woff2") format("woff2"),
+  url("/ttf/KurdisTest-CondensedExtraBold.ttf") format("truetype");
 }
-
+@font-face {
+  font-family: "Kurdis";
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: bold;
+  src: url("/woff2/KurdisTest-ExtraWideBold.woff2") format("woff2"),
+  url("/woff/KurdisTest-ExtraWideBold.woff") format("woff"),
+  url("/ttf/KurdisTest-ExtraWideBold.ttf") format("truetype");
+}
 
 

@@ -8,6 +8,7 @@ export default {
   theme: {
     fontFamily: {
       sans: ["Open Sans", "sans-serif"],
+	  serif: ["PPEditorial", "serif"],
     },
     extend: {
       fontFamily: {

@@ -4,7 +4,6 @@ import { type CollectionEntry } from "astro:content";
 import { Image } from "astro:assets";
 import { Vimeo } from "@astro-community/astro-embed-vimeo";
 
-import heroImage from "../assets/img/nollalinja_1124_hero.jpg";
 import outshine from "../assets/img/outshine.png";
 import nollalinja from "../assets/img/nollalinja.png";
 import thl from "../assets/img/thl.png";
@@ -13,6 +12,8 @@ import viaplay from "../assets/img/viaplay.png";
 import Timer from "../components/Timer.astro";
 import VideoComponent from "../components/VideoComponent.astro";
 import Loading from "../components/Loading.astro";
+
+import "../main.css";
 
 interface Props {
   content: CollectionEntry<"main">;
@@ -40,13 +41,13 @@ const { content, title } = Astro.props;
         {
           content.slug == "trailer_fi" ? (
             <a href="/">
-              <div class="flex items-center px-4 py-2 text-xs font-display font-bold uppercase text-white line-clamp-none md:text-lg">
+              <div class="flex items-center px-4 py-2 text-xs font-display uppercase text-white line-clamp-none md:text-lg">
                 in english
               </div>
             </a>
           ) : (
             <a href="/fi">
-              <div class="flex items-center px-4 py-2 text-xs font-display font-bold uppercase text-white line-clamp-none md:text-lg">
+              <div class="flex items-center px-4 py-2 text-xs font-display uppercase text-white line-clamp-none md:text-lg">
                 suomeksi
               </div>
             </a>
@@ -66,17 +67,17 @@ const { content, title } = Astro.props;
         <div class=""></div>
         <div class="">
           <div
-            class="text-[2vmin] text-ivory drop-shadow-lg uppercase font-display font-bold leading-none tracking-widest"
+            class="text-[2vmin] text-ivory drop-shadow-lg uppercase font-display leading-none tracking-widest"
           >
             {content.data.s1heading}
           </div>
           <div
-            class="text-[min(17vw,320px)] text-ivory uppercase leading-none flex flex-row justify-center font-condensed drop-shadow-lg"
+            class="text-[min(17vw,320px)] text-ivory uppercase font-condensed leading-none flex flex-row justify-center drop-shadow-lg"
           >
             {content.data.s1display}
           </div>
           <div
-            class="text-[2vmin] tracking-wide uppercase text-ivory font-display font-bold drop-shadow-xl"
+            class="text-[2vmin] tracking-wide uppercase text-ivory font-display drop-shadow-xl"
           >
             {content.data.s1subtitle}
           </div>
