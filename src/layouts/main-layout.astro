@@ -12,7 +12,7 @@ import viaplay from "../assets/img/viaplay.png";
 
 import Timer from "../components/Timer.astro";
 import VideoComponent from "../components/VideoComponent.astro";
-// import Loading from "../components/loading.astro";
+import Loading from "../components/Loading.astro";
 
 interface Props {
   content: CollectionEntry<"main">;
@@ -38,13 +38,13 @@ const { content, title } = Astro.props;
         {
           content.slug == "trailer_fi" ? (
             <a href="/">
-              <div class="flex items-center px-4 py-2 mx-2 text-xs font-bold uppercase text-white line-clamp-none md:text-lg hover:bg-white/[.10">
+              <div class="flex items-center px-4 py-2 mx-2 text-xs font-bold uppercase text-white line-clamp-none md:text-lg">
                 in english
               </div>
             </a>
           ) : (
             <a href="/fi">
-              <div class="flex items-center px-4 py-2 mx-2 text-xs font-bold uppercase text-white line-clamp-none md:text-lg hover:bg-white/[.10">
+              <div class="flex items-center px-4 py-2 mx-2 text-xs font-bold uppercase text-white line-clamp-none md:text-lg">
                 suomeksi
               </div>
             </a>
@@ -52,7 +52,7 @@ const { content, title } = Astro.props;
         }
       </div>
     </nav>
-    <!-- <Loading /> -->
+    <Loading />
     <div
       class="h-[85vh] bg-cover bg-center bg-norepeat text-center flex flex-row justify-center py-16"
     >

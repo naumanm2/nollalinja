@@ -5,7 +5,7 @@ import { Image } from "astro:assets";
 
 <div
   id="loading"
-  class="w-full h-[100vh] bg-black flex flex-row items-center opacity-100 justify-center z-50 fixed left-0 top-0"
+  class="w-full h-[100vh] bg-black flex flex-row items-center opacity-100 justify-center z-[1001] fixed left-0 top-0"
 >
   <Image
     id="image"
@@ -20,5 +20,9 @@ import { Image } from "astro:assets";
     //   @ts-ignore
     document.getElementById("loading").classList.add("animate-bg");
     //   @ts-ignore
+    setTimeout(() => {
+      // @ts-ignore
+      document.getElementById("loading").style.display = "none";
+    }, 1500);
   };
 </script>

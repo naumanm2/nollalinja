@@ -22,8 +22,8 @@ export default {
         },
       },
       animation: {
-        logo: "fade .25 ease-in-out 2s forwards",
-        bg: "fade .5s ease-in-out 2s forwards",
+        logo: "fade .25 ease-in-out 1s forwards",
+        bg: "fade .5s ease-in-out 1s forwards",
       },
       fontSize: {
         "10xl": "16rem",
