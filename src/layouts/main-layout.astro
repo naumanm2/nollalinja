@@ -34,7 +34,9 @@ const { content, title } = Astro.props;
 
   <body class="bg-[#0c0c0c]">
     <nav class="">
-      <div class="flex justify-end p-4 sm:p-8 md:p-12 lg:p-16 fixed z-[1000] w-full">
+      <div
+        class="flex justify-end p-4 sm:p-8 md:p-12 lg:p-16 fixed z-[1000] w-full"
+      >
         {
           content.slug == "trailer_fi" ? (
             <a href="/">
@@ -101,19 +103,21 @@ const { content, title } = Astro.props;
         </div>
       </div>
     </div>
-    <div class="p-8 py-8 md:py-32 flex flex-row justify-center font-display">
+    <div class="p-8 md:py-32 flex flex-row justify-center font-display">
       <div class="max-w-[1536px]">
         <div
-          class="text-[4vmax] text-white font-bold font-kondensed uppercase leading-[1.13]e"
+          class="text-[4vmax] text-white font-kondensed uppercase leading-[1.13]"
         >
           {content.data.s3heading}
         </div>
         <div
-          class="text-[2vmax] text-white font-bold uppercase leading-[1.13] py-4"
+          class="text-[2vmax] text-white font-kondensed uppercase leading-[1.13] pt-4 md:pt-8 max-w-screen-lg"
         >
           {content.data.s3body1}
         </div>
-        <div class="text-[1.3vmax] font-sans text-white leading-tight py-4">
+        <div
+          class="text-[1.3vmax] font-sans text-white leading-tight pt-4 md:pt-8 max-w-screen-lg"
+        >
           {content.data.s3body2}
         </div>
       </div>

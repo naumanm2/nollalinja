@@ -7,33 +7,28 @@
 	loop
 	playsinline>
 	<source id="video-source-1" src="/mp4/hero_mobile.mp4" type="video/mp4" />
-	<source id="video-source-2" src="/mp4/hero_mobile.mp4" type="video/mp4" />
 </video>
 
 <script>
 	var video1 = document.getElementById("video-source-1");
-
 	var mobile = true;
-
+	
 	(function () {
-		window.onload = checkVideo;
+		checkVideo();
 		window.onresize = checkVideo;
 
 		function checkVideo() {
+			console.log("checking")
 			let width = window.innerWidth;
 
 			if (width > 1024 && mobile) {
 				video1!.setAttribute("src", "/mp4/hero_desktop.mp4");
 				video1!.setAttribute("type", "video/mp4");
-				// video2!.setAttribute("src", "/video/hero_1920x1080.mov");
-				// video2!.setAttribute("type", "video/mp4");
 				document.querySelector("video")?.load();
 				mobile = false;
 			} else if (width < 1024 && !mobile) {
 				video1!.setAttribute("src", "/mp4/hero_mobile.mp4");
 				video1!.setAttribute("type", "video/mp4");
-				// video2!.setAttribute("src", "/video/hero_1080x1920.mov");
-				// video2!.setAttribute("type", "video/mp4");
 				document.querySelector("video")?.load();
 				mobile = true;
 			}
