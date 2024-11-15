@@ -1,31 +1,56 @@
+---
+interface Props {
+  days: string;
+  hours: string;
+  minutes: string;
+  seconds: string;
+}
+
+const { days, hours, minutes, seconds } = Astro.props;
+---
+
 <!doctype html>
 <div id="countdown" class="text-white">
   <ul
-    class="flex flex-row font-display justify-center gap-2 text-white font-extrabold text-[10vmin] leading-none"
+    class="flex flex-row font-kondensed justify-center gap-2 text-white font-extrabold text-[max(10vmin,12px)] leading-none"
   >
-    <li>
+    <li class="flex flex-col justify-end">
       <div id="days" class=""></div>
-      <div class="text-blue uppercase font-bold text-[2vmin]">days</div>
+      <div class="text-blue uppercase font-bold text-[2vw] md:text-[1vw] mx-4">
+        {days}
+      </div>
     </li>
     <div class="">:</div>
-    <li>
+    <li class="flex flex-col justify-end">
       <div id="hours"></div>
-      <div class="text-blue uppercase font-bold text-[2vmin]">Hours</div>
+      <div
+        class="text-blue uppercase font-bold text-[1vw] md:text-[min(1vw,48px)] mx-4"
+      >
+        {hours}
+      </div>
     </li>
     <div class="">:</div>
-    <li>
+    <li class="flex flex-col justify-end">
       <div id="minutes"></div>
-      <div class="text-blue uppercase font-bold text-[2vmin]">Minutes</div>
+      <div class="text-blue uppercase font-bold text-[1vw] md:text-[1vw] mx-4">
+        {minutes}
+      </div>
     </li>
     <div class="">:</div>
-    <li>
+    <li class="flex flex-col justify-end">
       <div id="seconds"></div>
-      <div class="text-blue uppercase font-bold text-[2vmin]">Seconds</div>
+      <div class="text-blue uppercase font-bold text-[1vw] md:text-[1vw] mx-4">
+        {seconds}
+      </div>
     </li>
   </ul>
 </div>
 
 <script>
+  function pad(n: number) {
+    return (n < 10 ? "0" : "") + n;
+  }
+
   (function () {
     const second = 1000,
       minute = second * 60,
@@ -37,20 +62,20 @@
         const now = new Date().getTime(),
           distance = countDown - now;
         // @ts-ignore
-        (document.getElementById("days").innerText = Math.floor(
-          distance / day
+        (document.getElementById("days").innerText = pad(
+          Math.floor(distance / day)
         )),
           // @ts-ignore
-          (document.getElementById("hours").innerText = Math.floor(
-            (distance % day) / hour
+          (document.getElementById("hours").innerText = pad(
+            Math.floor((distance % day) / hour)
           )),
           // @ts-ignore
-          (document.getElementById("minutes").innerText = Math.floor(
-            (distance % hour) / minute
+          (document.getElementById("minutes").innerText = pad(
+            Math.floor((distance % hour) / minute)
           )),
           // @ts-ignore
-          (document.getElementById("seconds").innerText = Math.floor(
-            (distance % minute) / second
+          (document.getElementById("seconds").innerText = pad(
+            Math.floor((distance % minute) / second)
           ));
         //seconds
       }, 1000);

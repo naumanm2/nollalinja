@@ -27,6 +27,7 @@ const main = defineCollection({
 
     s7heading: z.string().optional(),
     s7subheading: z.string().optional(),
+    s7subheading2: z.string().optional(),
     s7body1: z.string().optional(),
     s7body2: z.string().optional(),
 	}),

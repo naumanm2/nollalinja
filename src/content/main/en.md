@@ -2,38 +2,41 @@
 
 s1heading: "Life at The"
 s1display: "Ringside"
-s1subtitle: "Iris Olssonin lyhytdokumentti"
+s1subtitle: "A short documentary by Iris Olsson"
 
-s2trailerheading: "Katso traileri"
-s2fulllengthheading: "Katso dokumentti"
+s2trailerheading: "Watch the trailer"
+s2fulllengthheading: "Watch the short documentary"
 
-s3heading: "Ääni heille, jotka elivät lapsuutensa kehän laidalla – vasten tahtoaan"
-s3body1: "Lähisuhdeväkivalta on maailman katsotuin taistelulaji. Sitä todistaa vuosittain yli 800 miljoonaa ihmistä. "
-s3body2: "Lapsena todistettu väkivalta vahingoittaa psyykkisesti yhtä paljon kuin lapseen kohdistettu väkivalta."
+s3heading: "A voice for those who grew up at the ringside, against their will"
+s3body1: "Domestic violence has more spectators than any other fighting type in the world. Over 800 million people witness it every year."
+s3body2: "Witnessing domestic violence is psychologically just as damaging as experiencing it firsthand."
 
-s4heading: "Life on the Ringside dokumentti"
-s4body1: "Viisi koskettavaa tarinaa elämästä perheväkivallan keskellä. Dokumentin päähenkilöt kertovat rikkinäisistä kodeistaan, joissa väkivallan näkeminen oli normaalia. He pohtivat, kuinka heidän kokemuksensa ovat muokanneet heitä ihmisinä, ja kuinka he ovat käsitelleet syviä henkisiä haavojaan. Sillä vain tunnistamalla traumat sekä kohtaamalla muistot, on mahollista jättää kehän laidalla vietetty menneisyys taakse."
+s4heading: "Life at the ringside / 5 unique stories"
+s4body1: "5 unique stories about life at the ringside of domestic violence. Real people share real stories of growing up in a home where witnessing violence was the norm. They contemplate how the experiences have shaped them, and how they’ve learned to deal with PTSD and mental trauma.  Only by identifying the trauma, facing the memories, talking about them and going through them, can they slowly leave the ringside to the past."
 
-s5heading: "Tietoa dokumentista"
+s5heading: "About the film"
 
-s6heading: "Ääni hiljaisille"
+s6heading: "A voice for the silenced"
 
-s6body1: "Lähisuhdeväkivallan kokemukset ovat hälyttävän yleisiä Suomessa. Parisuhteessa joka kolmas nainen ja joka kuudes mies on kokenut väkivaltaa. Parisuhteissa tapahtuvalle väkivallalle altistuvat usein myös perheen lapset. 
+s6body1: "Experiences of domestic violence are alarmingly common in Finland. One in three women and one in six men have faced violence in a relationship. Often, children in the family are also exposed to violence within the home.
 
-Lähisuhdeväkivalta voi olla esimerkiksi kontrollointia tai henkistä, fyysistä, digitaalista tai taloudellista väkivaltaa. Väkivaltaa voi käyttää, sitä voi kokea tai sille voi altistua sukupuolesta tai perhetilanteesta riippumatta. 
+Domestic violence can take many forms: it might be controlling behavior, or emotional, physical, digital, or financial abuse. Anyone, regardless of gender or family situation, can be a victim, a perpetrator, or exposed to violence.
 
-Jotta hiljaiset uhrit saavat äänen, on meidän kaikkien toimittava."
+To give a voice to the silent victims, we all must take action."
 
-s6body2: "Jos sinä tai läheisesi altistutte lähisuhdeväkivallalle, apua on tarjolla. Nollalinjan auttava puhelin päivystää 24/7 numerossa 0800 005 005. Turvakodit 24/7 taas osoitteessa nollalinja.fi/turvakodit 
+s6body2: "If you or someone you know is exposed to domestic violence, help is available. The Nollalinja helpline is open 24/7 at 0800 005 005. For emergency shelters, click here.
 
-Toivomme lisäksi että kaikki, jotka lukevat tämän, allekirjoittaisivat vetoomuksen lakialoitteesta, jossa laki tunnistaisi lapsen uhriksi kaikissa tilanteissa, joissa hän joutuu näkemään väkivaltaa. Vetoomuksen voi allekirjoittaa tästä. "
+We also urge everyone reading this to sign a petition for a law amendment that would recognize a child as a victim in every situation where they witness violence. Sign the petition here."
 
 s7heading: "Bio"
 s7subheading: "Iris Olsson"
-s7body1: "Iris Olsson on palkittu elokuvaohjaaja, käsikirjoituskonsultti ja luova valmentaja. Vuodesta 2009 lähtien hän on ohjannut dokumenttielokuvia, mainoksia, faktasarjoja ja draamasarjoja ympäri maailmaa. Häntä inspiroi erityisesti tosielämän tarinoiden kertominen fiktion ja dokumentin keinoin."
+s7subheading2: "Film Director"
+s7body1: "Iris Olsson is a, award-winning film Director, Script Consultant and Creative Coach
+Since 2009, Iris has been directing documentaries, commercials, factual programs, and drama series worldwide. Passionate about telling real-life stories through both fiction and documentary."
 
-s7body2: "Aiemmin hän on toiminut muun muassa lyhytelokuvien, animaatioiden ja dokumenttielokuvien tuotantoneuvojana Suomen elokuvasäätiössä; taiteellisena johtajana ja alan ohjelmajohtajana DocPoint Helsinki dokumenttielokuvafestivaalilla; audiovisuaalisen tuotannon luennoitsijana Metropolian ammattikorkeakoulussa Helsingissä sekä toimittajana Ylellä.
+s7body2: "Animation, and Documentary Films at the Finnish Film Foundation; Artistic Director and Head of Industry at DocPoint Helsinki Documentary Film Festival; Lecturer of Audiovisual Production at the Metropolitan University of Applied Sciences in Helsinki; and In-House Journalist at YLE.
 
-Iris on valmistunut elokuvataiteen maisteriksi Aaltoyliopistosta ja opiskellut lisäksi näyttelijäntyötä, dramaturgiaa, journalismia ja luovaa kirjoittamista. Hän on myös Euroopan elokuvaakatemian jäsen."
+Iris holds an MA in Film from Aalto University and have studied acting, dramaturgy, journalism, and creative writing. Iris is also a proud member of the European Film Academy.
+"
 
 ---
