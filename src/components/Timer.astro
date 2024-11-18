@@ -10,9 +10,9 @@ const { days, hours, minutes, seconds } = Astro.props;
 ---
 
 <!doctype html>
-<div id="countdown" class="text-white">
+<div id="countdown" class="text-ivory">
   <ul
-    class="flex flex-row font-condensed justify-center gap-0 md:gap- text-white text-[min(15vw,96px)] leading-none"
+    class="flex flex-row font-condensed justify-center gap-0 text-ivory text-[min(15vw,128px)] leading-none"
   >
     <li class="flex flex-col justify-end">
       <div id="days" class=""></div>
@@ -57,7 +57,7 @@ const { days, hours, minutes, seconds } = Astro.props;
       hour = minute * 60,
       day = hour * 24;
 
-    const countDown = new Date("2024-11-26").getTime(),
+    const countDown = new Date("2024-11-26T08:00:00").getTime(),
       x = setInterval(function () {
         const now = new Date().getTime(),
           distance = countDown - now;

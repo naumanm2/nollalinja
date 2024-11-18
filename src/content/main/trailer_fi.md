@@ -7,9 +7,9 @@ s1subtitle: "Iris Olssonin lyhytdokumentti"
 s2trailerheading: "Katso traileri"
 s2fulllengthheading: "Katso dokumentti"
 
-s3heading: "Katso traileri"
+s3heading: "Katso traileri alta"
 s3body1: "Kohtaa maailman seuratuimman taistelulajin katsojat"
-s3body2: "Tarina heistä, jotka ovat nähneet kaiken. Life at the Ringside siirtää valokeilan ottelijoista yleisöön –ihmisiin, jotka ovat viettäneet koko elämänsä kehän reunalla."
+s3body2: "Tarina heistä, jotka ovat nähneet kaiken. Life at the Ringside siirtää valokeilan ottelijoista yleisöön – ihmisiin, jotka ovat viettäneet koko elämänsä kehän reunalla."
 
 s4heading: "Life on the Ringside dokumentti"
 s4body1: "Viisi koskettavaa tarinaa elämästä perheväkivallan keskellä. Dokumentin päähenkilöt kertovat rikkinäisistä kodeistaan, joissa väkivallan näkeminen oli normaalia. He pohtivat, kuinka heidän kokemuksensa ovat muokanneet heitä ihmisinä, ja kuinka he ovat käsitelleet syviä henkisiä haavojaan. Sillä vain tunnistamalla traumat sekä kohtaamalla muistot, on mahollista jättää kehän laidalla vietetty menneisyys taakse."

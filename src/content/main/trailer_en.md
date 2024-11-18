@@ -7,7 +7,7 @@ s1subtitle: "A short documentary by Iris Olsson"
 s2trailerheading: "Watch the trailer"
 s2fulllengthheading: "Watch the short documentary"
 
-s3heading: "Watch teaser trailer now"
+s3heading: "Watch the trailer below now"
 s3body1: "Meet the spectators of the most watched fights in the world"
 s3body2: "Get ready to hear from the viewers who’ve seen it all. “Life at the Ringside” takes the spotlight from the fighters and shines it at the audience – the people who’ve spent their whole life at the ringside."
 
