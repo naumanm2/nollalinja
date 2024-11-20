@@ -13,6 +13,11 @@ const main = defineCollection({
     s3body1: z.string().optional(),
     s3body2: z.string().optional(),
 
+    card3: z.string().optional(),
+    card1: z.string().optional(),
+    card2: z.string().optional(),
+    card4: z.string().optional(),
+
     s4heading: z.string().optional(),
     s4body1: z.string().optional(),
     s4body2: z.string().optional(),
@@ -30,6 +35,9 @@ const main = defineCollection({
     s7subheading2: z.string().optional(),
     s7body1: z.string().optional(),
     s7body2: z.string().optional(),
+
+    s8heading: z.string().optional(),
+
 	}),
 });
 

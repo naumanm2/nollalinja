@@ -14,7 +14,14 @@ s3body2: "Witnessing domestic violence is psychologically just as damaging as ex
 s4heading: "Life at the ringside / 5 unique stories"
 s4body1: "5 unique stories about life at the ringside of domestic violence. Real people share real stories of growing up in a home where witnessing violence was the norm. They contemplate how the experiences have shaped them, and how they’ve learned to deal with PTSD and mental trauma.  Only by identifying the trauma, facing the memories, talking about them and going through them, can they slowly leave the ringside to the past."
 
-s5heading: "About the film"
+card1: "Lorem ipsum dolor sit amet"
+card2: "Lorem ipsum dolor sit amet"
+card3: "Lorem ipsum dolor sit amet"
+card4: "Lorem ipsum dolor sit amet"
+
+s5heading: "Life at the ringside"
+s5body1: "5 unique stories about life at the ringside of domestic violence. Real people share real stories of growing up in a home where witnessing violence was the norm. They contemplate how the experiences have shaped them, and how they’ve learned to deal with PTSD and mental trauma. "
+s5body2: "Only by identifying the trauma, facing the memories, talking about them and going through them, can they slowly leave the ringside to the past."
 
 s6heading: "A voice for the silenced"
 
@@ -24,7 +31,7 @@ Domestic violence can take many forms: it might be controlling behavior, or emot
 
 To give a voice to the silent victims, we all must take action."
 
-s6body2: "If you or someone you know is exposed to domestic violence, help is available. The Nollalinja helpline is open 24/7 at 0800 005 005. For emergency shelters, click here.
+s6body2: "If you or someone you know is exposed to domestic violence, help is available. The Nollalinja helpline is open 24/7 at 0800 005 005. For emergency shelters, [click here](https://nollalinja.fi/en/shelters-for-victims-of-domestic-violence).
 
 We also urge everyone reading this to sign a petition for a law amendment that would recognize a child as a victim in every situation where they witness violence. Sign the petition here."
 
@@ -38,5 +45,7 @@ s7body2: "Animation, and Documentary Films at the Finnish Film Foundation; Artis
 
 Iris holds an MA in Film from Aalto University and have studied acting, dramaturgy, journalism, and creative writing. Iris is also a proud member of the European Film Academy.
 "
+
+s8heading: "Photo Gallery"
 
 ---

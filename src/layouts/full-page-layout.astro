@@ -1,0 +1,254 @@
+---
+
+import { type CollectionEntry } from "astro:content";
+
+import { Image } from "astro:assets";
+
+import outshine from "../assets/img/outshine.png";
+import nollalinja from "../assets/img/nollalinja.png";
+import thl from "../assets/img/thl.png";
+import viaplay from "../assets/img/viaplay.png";
+import irisolsson from "../assets/img/nollalinja_featured-image.png";
+
+import featured_image from "../assets/img/nollalinja_featured-image.png";
+
+
+import "../main.css";
+import Paragraph from "../components/Paragraph.astro";
+import Carousel from "../components/Carousel.astro";
+import VideoComponent from "../components/VideoComponent.astro";
+
+interface Props {
+  content: CollectionEntry<"main">;
+  title: String;
+}
+
+const { content, title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+
+  <body class="bg-[#0c0c0c]">
+    <nav class="">
+      <div
+        class="flex justify-end p-2 sm:p-6 md:p-9 lg:p-12 fixed z-[1000] w-full"
+      >
+        {
+          content.slug == "trailer_fi" ? (
+            <a href="/">
+              <div class="flex items-center px-4 py-2 text-xs font-display uppercase text-white line-clamp-none md:text-sm">
+                in english
+              </div>
+            </a>
+          ) : (
+            <a href="/fi">
+              <div class="flex items-center px-4 py-2 text-xs font-display uppercase text-white line-clamp-none md:text-sm">
+                suomeksi
+              </div>
+            </a>
+          )
+        }
+      </div>
+    </nav>
+    <div class="h-0 w-0 -z-50 invisible">
+      <Image
+        src={featured_image}
+        alt="social sharing image for ringside event"
+      />
+    </div>
+    <!-- <Loading /> -->
+    <div
+      class="h-[85vh] bg-cover bg-center bg-norepeat text-center flex flex-row justify-center py-16"
+    >
+      <VideoComponent />
+
+      <div
+        class="w-full max-w-screen-2xl flex flex-col justify-between h-full font-display"
+      >
+        <div class=""></div>
+        <div class="">
+          <div
+            class="text-[max(2vw,20px)] text-ivory drop-shadow-lg uppercase font-display leading-none tracking-widest"
+          >
+            {content.data.s1heading}
+          </div>
+          <div
+            class="text-[min(24vw,320px)] text-ivory uppercase font-condensed tracking-tighter leading-none flex flex-row justify-center drop-shadow-lg"
+          >
+            {content.data.s1display}
+          </div>
+          <div
+            class="text-[max(1vw,14px)] tracking-wide uppercase text-ivory font-display drop-shadow-xl px-3"
+          >
+            {content.data.s1subtitle}
+          </div>
+        </div>
+
+        <div class="w-full"></div>
+      </div>
+    </div>
+
+    <Paragraph
+      heading={content.data.s3heading}
+      body1={content.data.s3body1}
+      body2={content.data.s3body2}
+    />
+
+    <div class="w-full p-4">
+      <div style="padding:56.25% 0 0 0;position:relative;">
+        <iframe
+          loading="lazy"
+          src="https://player.vimeo.com/video/1030876291?h=2139dbc008&badge=0&autopause=0&player_id=0&app_id=58479"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+          style="position:absolute;top:0;left:0;width:100%;height:100%;"
+          title="Nollalinja_Trailer_45s_1080p"></iframe>
+      </div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+
+    <div
+      class="p-4 pt-12 sm:p-12 sm:pb-0 md:p-16 md:pb-0 xl:p-32 xl:pb-0 w-full flex flex-col gap-8"
+    >
+      <div class="flex flex-col md:flex-row gap-8">
+        <div class="flex-1">
+          <div
+            class="bg-[url('/img/fromtheringside_1x1_1.jpg')] bg-[rgba(0,0,0,0.5)] bg-cover bg-center bg-norepeat flex justify-center items-center aspect-video text-white text-md"
+          >
+            {content.data.card1}
+          </div>
+        </div>
+        <div class="flex-1">
+          <div
+            class="bg-[url('/img/fromtheringside_1x1_2.jpg')] bg-[rgba(0,0,0,0.5)] bg-cover bg-center bg-norepeat flex justify-center items-center aspect-video text-white text-md"
+          >
+            {content.data.card2}
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row gap-8">
+        <div class="flex-1">
+          <div
+            class="bg-[url('/img/fromtheringside_1x1_3.jpg')] bg-[rgba(0,0,0,0.5)] bg-blend-multiply bg-cover bg-center bg-norepeat flex justify-center items-center aspect-video text-white text-md"
+          >
+            {content.data.card3}
+          </div>
+        </div>
+        <div class="flex-1">
+          <div
+            class="bg-[url('/img/fromtheringside_1x1_4.jpg')] bg-[rgba(0,0,0,0.5)] bg-cover bg-center bg-norepeat flex justify-center items-center aspect-video text-white text-md"
+          >
+            {content.data.card4}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <Paragraph
+      heading={content.data.s5heading}
+      body1={content.data.s5body1}
+      body2={content.data.s5body2}
+    />
+
+    <div class="flex flex-col lg:flex-row w-full h-[max(80vh,420px)] gap-0">
+      <div class="flex flex-1">
+        <div
+          class="bg-[url(img/ringside_1.jpg)] bg-top bg-no-repeat bg-cover flex-1"
+        >
+        </div>
+        <div
+          class="bg-[url(img/ringside_2.jpg)] bg-top bg-no-repeat bg-cover flex-1"
+        >
+        </div>
+      </div>
+      <div class="flex flex-1">
+        <div
+          class="bg-[url(img/ringside_3.jpg)] bg-top bg-no-repeat bg-cover flex-1"
+        >
+        </div>
+        <div
+          class="bg-[url(img/ringside_4.jpg)] bg-top bg-no-repeat bg-cover flex-1"
+        >
+        </div>
+      </div>
+    </div>
+
+    <Paragraph
+      heading={content.data.s6heading}
+      body1={content.data.s6body1}
+      body2={content.data.s6body2}
+    />
+
+    <div
+      class="p-4 py-12 sm:p-12 md:p-16 xl:p-32 text-white flex flex-row justify-center"
+    >
+      <div class="max-w-[1248px]">
+        <div class="text-xl font-condensed uppercase">
+          {content.data.s7heading}
+        </div>
+        <div class="flex flex-row">
+          <div class="flex-1 flex flex-col md:flex-row gap-8">
+            <div class="basis-1/2">
+              <Image src={irisolsson} alt="image of director Iris Olsson" />
+            </div>
+            <div
+              class="basis-1/2 flex flex-col text-lg font-condensed uppercase justify-end"
+            >
+              <div class="">
+                {content.data.s7subheading}
+              </div>
+              <div class="">
+                {content.data.s7subheading2}
+              </div>
+            </div>
+          </div>
+          <!-- <div class="flex-1"></div> -->
+        </div>
+        <div class="flex flex-col lg:flex-row lg:gap-8 py-8">
+          <div
+            class="text-[max(1.3vw,16px)] font-sans text-white leading-tight pt-4 md:pt-8 max-w-screen-lg flex-1"
+          >
+            {content.data.s7body1}
+          </div>
+          <div
+            class="text-[max(1.3vw,16px)] font-sans text-white leading-tight pt-4 md:pt-8 max-w-screen-lg flex-1"
+          >
+            {content.data.s7body2}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full p-4 py-12 sm:p-12 md:p-16 xl:p-32">
+      <div class="p-4 py-12 sm:p-12 md:p-16 xl:p-32">
+        <div class="max-w-[1248px]">
+          <div
+            class="text-[max(4vw,40px)] text-white font-condensed uppercase leading-[1.13]"
+          >
+            {content.data.s8heading}
+          </div>
+        </div>
+      </div>
+      <Carousel />
+    </div>
+  </body>
+  <footer class="p-12 pb-16 md:py-32 flex justify-center">
+    <div
+      class="max-w-[1536px] flex flex-col md:flex-row justify-center items-center gap-12"
+    >
+      <div class="max-w-32 flex items-center">
+        <Image src={viaplay} alt="logo of viaplay" />
+      </div>
+      <div class="max-w-32 flex items-center">
+        <Image src={outshine} alt="logo of outshine" />
+      </div>
+    </div>
+  </footer>
+</html>
