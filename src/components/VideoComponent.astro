@@ -1,6 +1,6 @@
 <video
 	id="video"
-	class="absolute inset-0 min-w-full h-[85vh] object-cover object-center -z-10"
+	class="absolute inset-0 min-w-full h-[85vh] object-cover object-center z-0"
 	poster="img/hero_poster.jpg"
 	muted
 	autoplay
@@ -18,18 +18,19 @@
 		window.onresize = checkVideo;
 
 		function checkVideo() {
-			console.log("checking")
 			let width = window.innerWidth;
 
 			if (width > 1024 && mobile) {
 				video1!.setAttribute("src", "/mp4/hero_desktop.mp4");
 				video1!.setAttribute("type", "video/mp4");
 				document.querySelector("video")?.load();
+				console.log(document.querySelector("video"));
 				mobile = false;
 			} else if (width < 1024 && !mobile) {
 				video1!.setAttribute("src", "/mp4/hero_mobile.mp4");
 				video1!.setAttribute("type", "video/mp4");
 				document.querySelector("video")?.load();
+				console.log(document.querySelector("video"));
 				mobile = true;
 			}
 		}

@@ -31,9 +31,11 @@ Domestic violence can take many forms: it might be controlling behavior, or emot
 
 To give a voice to the silent victims, we all must take action."
 
-s6body2: "If you or someone you know is exposed to domestic violence, help is available. The Nollalinja helpline is open 24/7 at 0800 005 005. For emergency shelters, [click here](https://nollalinja.fi/en/shelters-for-victims-of-domestic-violence).
+s6body2: "If you or someone you know is exposed to domestic violence, help is available. The Nollalinja helpline is open 24/7 at 0800 005 005. For emergency shelters,"
 
-We also urge everyone reading this to sign a petition for a law amendment that would recognize a child as a victim in every situation where they witness violence. Sign the petition here."
+s6bodylink: https://nollalinja.fi/en/shelters-for-victims-of-domestic-violence
+
+s6body3: "We also urge everyone reading this to sign a petition for a law amendment that would recognize a child as a victim in every situation where they witness violence. Sign the petition here."
 
 s7heading: "Bio"
 s7subheading: "Iris Olsson"

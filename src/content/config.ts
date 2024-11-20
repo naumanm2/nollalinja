@@ -29,7 +29,9 @@ const main = defineCollection({
     s6heading: z.string().optional(),
     s6body1: z.string().optional(),
     s6body2: z.string().optional(),
-
+    s6bodylink: z.string().optional(),
+    s6body3: z.string().optional(),
+    
     s7heading: z.string().optional(),
     s7subheading: z.string().optional(),
     s7subheading2: z.string().optional(),

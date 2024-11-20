@@ -183,7 +183,9 @@ const { content, title } = Astro.props;
     <Paragraph
       heading={content.data.s6heading}
       body1={content.data.s6body1}
+      link={content.data.s6bodylink}
       body2={content.data.s6body2}
+      body3={content.data.s6body3}
     />
 
     <div
@@ -211,14 +213,14 @@ const { content, title } = Astro.props;
           </div>
           <!-- <div class="flex-1"></div> -->
         </div>
-        <div class="flex flex-col lg:flex-row lg:gap-8 py-8">
+        <div class="flex flex-col lg:flex-row lg:gap-8 lg:py-8">
           <div
-            class="text-[max(1.3vw,16px)] font-sans text-white leading-tight pt-4 md:pt-8 max-w-screen-lg flex-1"
+            class="text-[max(1.3vw,16px)] font-sans text-white leading-snug pt-4 md:pt-8 max-w-screen-lg flex-1"
           >
             {content.data.s7body1}
           </div>
           <div
-            class="text-[max(1.3vw,16px)] font-sans text-white leading-tight pt-4 md:pt-8 max-w-screen-lg flex-1"
+            class="text-[max(1.3vw,16px)] font-sans text-white leading-snug pt-4 md:pt-8 max-w-screen-lg flex-1"
           >
             {content.data.s7body2}
           </div>
@@ -227,8 +229,8 @@ const { content, title } = Astro.props;
     </div>
 
     <div class="w-full p-4 py-12 sm:p-12 md:p-16 xl:p-32">
-      <div class="p-4 py-12 sm:p-12 md:p-16 xl:p-32">
-        <div class="max-w-[1248px]">
+      <div class="flex flex-row justify-center items-start">
+        <div class="max-w-[1248px] w-full md:pb-16 sm:pb-12 pb-4">
           <div
             class="text-[max(4vw,40px)] text-white font-condensed uppercase leading-[1.13]"
           >

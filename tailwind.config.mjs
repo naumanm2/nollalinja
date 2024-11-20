@@ -31,7 +31,7 @@ export default {
       },
       fontSize: {
         "10xl": "16rem",
-        "md": "max(1.3vw,16px)",
+        "md": "max(1.2vw,16px)",
         "lg": "max(2vw,24px)",
         "xl": "max(4vw,40px)",
       },

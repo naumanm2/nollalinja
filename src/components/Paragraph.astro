@@ -3,9 +3,11 @@ interface Props {
   heading?: string;
   body1?: string;
   body2?: string;
+  body3?: string;
+  link?: string;
 }
 
-const { heading, body1, body2 } = Astro.props;
+const { heading, body1, body2, body3, link } = Astro.props;
 ---
 
 <div class="p-4 py-12 sm:p-12 md:p-16 xl:p-32 flex flex-row justify-center">
@@ -15,16 +17,16 @@ const { heading, body1, body2 } = Astro.props;
     >
       {heading}
     </div>
-    <div class="flex flex-col lg:flex-row lg:gap-8">
+    <div class="flex flex-col lg:flex-row lg:gap-16">
       <div
-        class="text-[max(1.3vw,16px)] font-sans text-white leading-tight pt-4 md:pt-8 max-w-screen-lg flex-1"
+        class="text-md leading-snug font-sans text-white pt-4 md:pt-8 max-w-screen-lg flex-1"
       >
         {body1}
       </div>
       <div
-        class="text-[max(1.3vw,16px)] font-sans text-white leading-tight pt-4 md:pt-8 max-w-screen-lg flex-1"
+        class="text-md font-sans text-white leading-snug pt-4 md:pt-8 max-w-screen-lg flex-1"
       >
-        {body2}
+        {body2} {link &&<a href={link} class="underline bg-neutral-800 active:bg-neutral-600 hover:bg-neutral-700 transition-all">click here</a> }
       </div>
     </div>
   </div>
