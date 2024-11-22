@@ -3,14 +3,42 @@ interface Props {
   heading?: string;
   body1?: string;
   body2?: string;
-  body3?: string;
+  linktext?: string;
   link?: string;
 }
 
-const { heading, body1, body2, body3, link } = Astro.props;
+const { heading, body1, body2, linktext, link } = Astro.props;
 ---
 
-<div class="p-4 py-12 sm:p-12 md:p-16 xl:p-32 flex flex-row justify-center">
+<div class="p-4 py-12 sm:p-12 md:p-16 xl:p-32">
+  <div class="flex flex-col lg:flex-row gap-8">
+    <div
+      class="text-[max(4vw,40px)] text-white font-condensed uppercase leading-[1.13] flex-1"
+    >
+      {heading}
+    </div>
+    <div class="flex flex-col lg:gap-4 flex-1 justify-start py-1">
+      <div class="text-md leading-snug font-sans text-white max-w-screen-lg">
+        {body1}
+      </div>
+      <div class="text-md font-sans text-white leading-snug max-w-screen-lg">
+        {body2}
+        {
+          link && (
+            <a
+              href={link}
+              class="underline bg-neutral-800 active:bg-neutral-600 hover:bg-neutral-700 transition-all"
+            >
+              {linktext}
+            </a>
+          )
+        }
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="p-4 py-12 sm:p-12 md:p-16 xl:p-32 flex flex-row justify-center">
   <div class="max-w-[1248px]">
     <div
       class="text-[max(4vw,40px)] text-white font-condensed uppercase leading-[1.13]"
@@ -30,4 +58,4 @@ const { heading, body1, body2, body3, link } = Astro.props;
       </div>
     </div>
   </div>
-</div>
+</div> -->

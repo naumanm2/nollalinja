@@ -11,13 +11,10 @@ s3heading: "A voice for those who grew up at the ringside, against their will"
 s3body1: "Domestic violence has more spectators than any other fighting type in the world. Over 800 million people witness it every year."
 s3body2: "Witnessing domestic violence is psychologically just as damaging as experiencing it firsthand."
 
-s4heading: "Life at the ringside / 5 unique stories"
-s4body1: "5 unique stories about life at the ringside of domestic violence. Real people share real stories of growing up in a home where witnessing violence was the norm. They contemplate how the experiences have shaped them, and how they’ve learned to deal with PTSD and mental trauma.  Only by identifying the trauma, facing the memories, talking about them and going through them, can they slowly leave the ringside to the past."
-
-card1: "Lorem ipsum dolor sit amet"
-card2: "Lorem ipsum dolor sit amet"
-card3: "Lorem ipsum dolor sit amet"
-card4: "Lorem ipsum dolor sit amet"
+card1: "For me witnessing domestic violence was most painful"
+card2: "My distress was often that I was afraid mom would die."
+card3: "When you hear mom calling your name, but you’re just a seven-year-old boy, what the hell can you do?"
+card4: "The safest man in your life can suddenly turn into a complete monster."
 
 s5heading: "Life at the ringside"
 s5body1: "5 unique stories about life at the ringside of domestic violence. Real people share real stories of growing up in a home where witnessing violence was the norm. They contemplate how the experiences have shaped them, and how they’ve learned to deal with PTSD and mental trauma. "
@@ -31,22 +28,18 @@ Domestic violence can take many forms: it might be controlling behavior, or emot
 
 To give a voice to the silent victims, we all must take action."
 
-s6body2: "If you or someone you know is exposed to domestic violence, help is available. The Nollalinja helpline is open 24/7 at 0800 005 005. For emergency shelters,"
+s6body2: "If you or someone you know is exposed to domestic violence, help is available. The Nollalinja helpline is open 24/7 at 0800 005 005. For emergency shelters, "
 
 s6bodylink: https://nollalinja.fi/en/shelters-for-victims-of-domestic-violence
 
-s6body3: "We also urge everyone reading this to sign a petition for a law amendment that would recognize a child as a victim in every situation where they witness violence. Sign the petition here."
+s6bodylinktext: "Click here."
 
 s7heading: "Bio"
 s7subheading: "Iris Olsson"
 s7subheading2: "Film Director"
-s7body1: "Iris Olsson is a, award-winning film Director, Script Consultant and Creative Coach
-Since 2009, Iris has been directing documentaries, commercials, factual programs, and drama series worldwide. Passionate about telling real-life stories through both fiction and documentary."
+s7body1: "Iris Olsson is a Finnish film director and documentary filmmaker. She has directed internationally acclaimed and awarded films, series and commercials for multiple platforms, including national television audience favorites."
 
-s7body2: "Animation, and Documentary Films at the Finnish Film Foundation; Artistic Director and Head of Industry at DocPoint Helsinki Documentary Film Festival; Lecturer of Audiovisual Production at the Metropolitan University of Applied Sciences in Helsinki; and In-House Journalist at YLE.
-
-Iris holds an MA in Film from Aalto University and have studied acting, dramaturgy, journalism, and creative writing. Iris is also a proud member of the European Film Academy.
-"
+s7body2: "In addition to directing she has worked as a script consultant, film commissioner and film festival artistic director. She in interested in telling stories which depict the inner strength and beauty in people."
 
 s8heading: "Photo Gallery"
 

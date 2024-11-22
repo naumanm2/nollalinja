@@ -1,5 +1,4 @@
 ---
-
 import { type CollectionEntry } from "astro:content";
 
 import { Image } from "astro:assets";
@@ -8,10 +7,9 @@ import outshine from "../assets/img/outshine.png";
 import nollalinja from "../assets/img/nollalinja.png";
 import thl from "../assets/img/thl.png";
 import viaplay from "../assets/img/viaplay.png";
-import irisolsson from "../assets/img/nollalinja_featured-image.png";
+import irisolsson from "../assets/img/irisolsson.png";
 
 import featured_image from "../assets/img/nollalinja_featured-image.png";
-
 
 import "../main.css";
 import Paragraph from "../components/Paragraph.astro";
@@ -43,14 +41,14 @@ const { content, title } = Astro.props;
         class="flex justify-end p-2 sm:p-6 md:p-9 lg:p-12 fixed z-[1000] w-full"
       >
         {
-          content.slug == "trailer_fi" ? (
-            <a href="/">
+          content.slug == "fi" ? (
+            <a href="/foryoureyesonly">
               <div class="flex items-center px-4 py-2 text-xs font-display uppercase text-white line-clamp-none md:text-sm">
                 in english
               </div>
             </a>
           ) : (
-            <a href="/fi">
+            <a href="/foryoureyesonly-fi">
               <div class="flex items-center px-4 py-2 text-xs font-display uppercase text-white line-clamp-none md:text-sm">
                 suomeksi
               </div>
@@ -120,32 +118,32 @@ const { content, title } = Astro.props;
       <div class="flex flex-col md:flex-row gap-8">
         <div class="flex-1">
           <div
-            class="bg-[url('/img/fromtheringside_1x1_1.jpg')] bg-[rgba(0,0,0,0.5)] bg-cover bg-center bg-norepeat flex justify-center items-center aspect-video text-white text-md"
+            class="bg-[url('/img/card-1.jpg')] bg-[rgba(0,0,0,0.5)] bg-cover bg-center bg-norepeat flex justify-center items-center aspect-video text-white text-md p-8 text-center font-semibold"
           >
-            {content.data.card1}
+            "{content.data.card1}"
           </div>
         </div>
         <div class="flex-1">
           <div
-            class="bg-[url('/img/fromtheringside_1x1_2.jpg')] bg-[rgba(0,0,0,0.5)] bg-cover bg-center bg-norepeat flex justify-center items-center aspect-video text-white text-md"
+            class="bg-[url('/img/card-2.jpg')] bg-[rgba(0,0,0,0.5)] bg-cover bg-center bg-norepeat flex justify-center items-center aspect-video text-white text-md p-8 text-center font-semibold"
           >
-            {content.data.card2}
+            "{content.data.card2}"
           </div>
         </div>
       </div>
       <div class="flex flex-col md:flex-row gap-8">
         <div class="flex-1">
           <div
-            class="bg-[url('/img/fromtheringside_1x1_3.jpg')] bg-[rgba(0,0,0,0.5)] bg-blend-multiply bg-cover bg-center bg-norepeat flex justify-center items-center aspect-video text-white text-md"
+            class="bg-[url('/img/card-3.jpg')] bg-[rgba(0,0,0,0.5)] bg-blend-multiply bg-cover bg-center bg-norepeat flex justify-center items-center aspect-video text-white text-md p-8 text-center font-semibold"
           >
-            {content.data.card3}
+            "{content.data.card3}"
           </div>
         </div>
         <div class="flex-1">
           <div
-            class="bg-[url('/img/fromtheringside_1x1_4.jpg')] bg-[rgba(0,0,0,0.5)] bg-cover bg-center bg-norepeat flex justify-center items-center aspect-video text-white text-md"
+            class="bg-[url('/img/card-4.jpg')] bg-[rgba(0,0,0,0.5)] bg-cover bg-center bg-norepeat flex justify-center items-center aspect-video text-white text-md p-8 text-center font-semibold"
           >
-            {content.data.card4}
+            "{content.data.card4}"
           </div>
         </div>
       </div>
@@ -185,20 +183,22 @@ const { content, title } = Astro.props;
       body1={content.data.s6body1}
       link={content.data.s6bodylink}
       body2={content.data.s6body2}
-      body3={content.data.s6body3}
+      linktext={content.data.s6bodylinktext}
     />
 
     <div
       class="p-4 py-12 sm:p-12 md:p-16 xl:p-32 text-white flex flex-row justify-center"
     >
-      <div class="max-w-[1248px]">
+      <div class="">
         <div class="text-xl font-condensed uppercase">
           {content.data.s7heading}
         </div>
         <div class="flex flex-row">
-          <div class="flex-1 flex flex-col md:flex-row gap-8">
-            <div class="basis-1/2">
-              <Image src={irisolsson} alt="image of director Iris Olsson" />
+          <div
+            class="flex-1 flex flex-col md:flex-row gap-8"
+          >
+          <div class="basis-1/2 after:content-['Photo:_Tuukka_Koski'] after:inline-block after:text-white after:italics after:text-xs -mb-5 ">
+          <Image src={irisolsson} alt="image of director Iris Olsson" />
             </div>
             <div
               class="basis-1/2 flex flex-col text-lg font-condensed uppercase justify-end"
@@ -206,7 +206,7 @@ const { content, title } = Astro.props;
               <div class="">
                 {content.data.s7subheading}
               </div>
-              <div class="">
+              <div class="leading-none">
                 {content.data.s7subheading2}
               </div>
             </div>

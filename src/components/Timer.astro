@@ -9,14 +9,15 @@ interface Props {
 const { days, hours, minutes, seconds } = Astro.props;
 ---
 
-<!doctype html>
-<div id="countdown" class="text-ivory">
+<div id="countdown" class="text-ivory z-50">
   <ul
     class="flex flex-row font-condensed justify-center gap-0 text-ivory text-[min(15vw,128px)] leading-none"
   >
     <li class="flex flex-col justify-end">
       <div id="days" class=""></div>
-      <div class="text-blue uppercase font-sans font-bold text-[max(2.1vw,13px)] lg:text-[min(2.1vw,18px)]">
+      <div
+        class="text-blue uppercase font-sans font-bold text-[max(2.1vw,13px)] lg:text-[min(2.1vw,18px)]"
+      >
         {days}
       </div>
     </li>
@@ -32,14 +33,18 @@ const { days, hours, minutes, seconds } = Astro.props;
     <div class="">:</div>
     <li class="flex flex-col justify-end">
       <div id="minutes"></div>
-      <div class="text-blue uppercase font-sans font-bold  text-[max(2.1vw,13px)] lg:text-[min(2.1vw,18px)]">
+      <div
+        class="text-blue uppercase font-sans font-bold text-[max(2.1vw,13px)] lg:text-[min(2.1vw,18px)]"
+      >
         {minutes}
       </div>
     </li>
     <div class="">:</div>
     <li class="flex flex-col justify-end">
       <div id="seconds"></div>
-      <div class="text-blue uppercase font-sans font-bold tracking-tight text-[max(2.1vw,13px)] lg:text-[min(2.1vw,18px)]">
+      <div
+        class="text-blue uppercase font-sans font-bold tracking-tight text-[max(2.1vw,13px)] lg:text-[min(2.1vw,18px)]"
+      >
         {seconds}
       </div>
     </li>

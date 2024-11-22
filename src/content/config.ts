@@ -30,6 +30,8 @@ const main = defineCollection({
     s6body1: z.string().optional(),
     s6body2: z.string().optional(),
     s6bodylink: z.string().optional(),
+    s6bodylinktext: z.string().optional(),
+    
     s6body3: z.string().optional(),
     
     s7heading: z.string().optional(),
