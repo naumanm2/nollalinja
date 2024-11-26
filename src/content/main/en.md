@@ -35,12 +35,16 @@ s6bodylink: https://nollalinja.fi/en/shelters-for-victims-of-domestic-violence
 s6bodylinktext: "click here."
 
 s7heading: "Directed by"
-s7subheading: "Iris Ohlsson"
+s7subheading: "Iris Olsson"
 s7subheading2: "Film Director"
-s7body1: "Iris Ohlsson is a Finnish film director and documentary filmmaker. She has directed internationally acclaimed and awarded films, series and commercials for multiple platforms, including national television audience favorites."
+s7body1: "Iris Olsson is a Finnish film director and documentary filmmaker. She has directed internationally acclaimed and awarded films, series and commercials for multiple platforms, including national television audience favorites."
 
 s7body2: "In addition to directing she has worked as a script consultant, film commissioner and film festival artistic director. She in interested in telling stories which depict the inner strength and beauty in people."
 
 s8heading: "Photo Gallery"
+
+cookieConsent: "This site uses mandatory cookies to function. By using the site you consent to these cookies."
+cookieConsentHeadline: "Welcome"
+cookieConsentButton: "Accept"
 
 ---

@@ -31,3 +31,22 @@
     url("/woff/KurdisExtraWideBold.woff") format("woff"),
     url("/woff2/KurdisExtraWideBold.woff2") format("woff2");
 }
+
+#cc-main {
+  /** Change font **/
+  --cc-font-family: Open Sans;
+  --cc-bg: #1c1c1c;
+
+  /** Change button primary color to black **/
+  --cc-btn-primary-bg: #3285da;
+  --cc-btn-primary-border-color: #3285da;
+  --cc-btn-primary-hover-bg: #3285dae6;
+  --cc-btn-primary-hover-border-color: #3285dae6;
+
+  /** Also make toggles the same color as the button **/
+  --cc-toggle-on-bg: var(--cc-btn-primary-bg);
+
+  /** Make the buttons a bit rounder **/
+  --cc-modal-border-radius: 0rem;
+  --cc-btn-border-radius: 0px;
+}

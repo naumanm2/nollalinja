@@ -38,6 +38,7 @@ export default {
       colors: {
         ivory: "#d5d0ca",
         blue: "#3285da",
+        blueHover:"#3285dae6",
       },
     },
   },

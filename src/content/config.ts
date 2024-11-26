@@ -42,6 +42,10 @@ const main = defineCollection({
 
     s8heading: z.string().optional(),
 
+    cookieConsent: z.string().optional(),
+    cookieConsentHeadline: z.string().optional(),
+    cookieConsentButton: z.string().optional(),
+
 	}),
 });
 

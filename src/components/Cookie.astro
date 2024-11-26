@@ -1,0 +1,34 @@
+---
+interface Props {
+  cookieConsent?: string;
+  cookieConsentHeadline?: string;
+  cookieConsentButton?: string;
+}
+
+const { cookieConsent, cookieConsentHeadline, cookieConsentButton } =
+  Astro.props;
+---
+
+<!-- <script is:inline>
+    const cookie = false
+  window.onload = function () {
+    const cookie = window.localStorage.getItem("cookies");
+  };
+</script> -->
+
+
+    <div class="z-50 box-border p-4 md:p-8 xl:p-16 fixed w-full bottom-0">
+      <div class="flex bg-black flex-col lg:flex-row flex-1 w-full h-full p-12 gap-8 border border-ivory">
+        <div class="flex-1">
+          <div class="font-condensed text-xl uppercase text-ivory">
+            {cookieConsentHeadline}
+          </div>
+          <div class="text-ivory text-md">{cookieConsent}</div>
+        </div>
+        <button class="p-12 py-4 text-md font-display bg-blue uppercase text-white font-bold h-max w-full lg:w-fit self-end hover:bg-blueHover">
+          {cookieConsentButton}
+        </button>
+      </div>
+    </div>
+  
+
