@@ -28,16 +28,16 @@ Domestic violence can take many forms: it might be controlling behavior, or emot
 
 To give a voice to the silent victims, we all must take action."
 
-s6body2: "If you or someone you know is exposed to domestic violence, help is available. The Nollalinja helpline is open 24/7 at 0800 005 005. For emergency shelters, "
+s6body2: "If you or someone you know is exposed to domestic violence, help is available. The Nollalinja helpline is open 24/7 at 080 005 005. For emergency shelters, "
 
 s6bodylink: https://nollalinja.fi/en/shelters-for-victims-of-domestic-violence
 
-s6bodylinktext: "Click here."
+s6bodylinktext: "click here."
 
-s7heading: "Bio"
-s7subheading: "Iris Olsson"
+s7heading: "Directed by"
+s7subheading: "Iris Ohlsson"
 s7subheading2: "Film Director"
-s7body1: "Iris Olsson is a Finnish film director and documentary filmmaker. She has directed internationally acclaimed and awarded films, series and commercials for multiple platforms, including national television audience favorites."
+s7body1: "Iris Ohlsson is a Finnish film director and documentary filmmaker. She has directed internationally acclaimed and awarded films, series and commercials for multiple platforms, including national television audience favorites."
 
 s7body2: "In addition to directing she has worked as a script consultant, film commissioner and film festival artistic director. She in interested in telling stories which depict the inner strength and beauty in people."
 

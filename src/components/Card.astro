@@ -5,7 +5,7 @@ interface Props {
   copy: string;
 }
 
-const { copy, bgImageString } = Astro.props;
+const { copy} = Astro.props;
 ---
 <div class="bg-[url('/img/nollalinja_featured-image.png')] bg-cover bg-center bg-norepeat flex justify-center items-center aspect-video text-white text-md">
   {copy}

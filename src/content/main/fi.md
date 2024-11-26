@@ -11,7 +11,7 @@ s3heading: "Ääni heille, jotka elivät lapsuutensa kehän laidalla – vasten 
 s3body1: "Lähisuhdeväkivalta on maailman katsotuin taistelulaji. Sitä todistaa vuosittain yli 800 miljoonaa ihmistä. "
 s3body2: "Lapsena todistettu väkivalta vahingoittaa psyykkisesti yhtä paljon kuin lapseen kohdistettu väkivalta."
 
-card1: “Kaikista satuttavinta oli väkivallan näkeminen”
+card1: "Kaikista satuttavinta oli väkivallan näkeminen vierestä"
 card2: "Mun hätä oli usein se että mä pelkäsin et äiti kuolee"
 card3: "Äiti huutaa apua, mut sä oot seitsemänvuotias poika niin mitä helvettiä sä voit tehdä?"
 card4: "Se turvallisin mies sun elämässä voi yhtäkkiä muuttua täydeksi hirviöksi"
@@ -25,19 +25,19 @@ s6body1: "Lähisuhdeväkivallan kokemukset ovat hälyttävän yleisiä Suomessa.
 
 Lähisuhdeväkivalta voi olla esimerkiksi kontrollointia tai henkistä, fyysistä, digitaalista tai taloudellista väkivaltaa. Väkivaltaa voi käyttää, sitä voi kokea tai sille voi altistua sukupuolesta tai perhetilanteesta riippumatta. "
 
-s6body2: "Jotta hiljaiset uhrit saavat äänen, on meidän kaikkien toimittava.  Jos sinä tai läheisesi altistutte lähisuhdeväkivallalle, apua on tarjolla. Nollalinjan auttava puhelin päivystää 24/7 numerossa 0800 005 005. Turvakodit löydät 24/7"
+s6body2: "Jotta hiljaiset uhrit saavat äänen, on meidän kaikkien toimittava.  Jos sinä tai läheisesi altistutte lähisuhdeväkivallalle, apua on tarjolla. Nollalinjan auttava puhelin päivystää 24/7 numerossa 080 005 005. Turvakodit löydät 24/7"
 
-s6bodylink: https://nollalinja.fi/en/shelters-for-victims-of-domestic-violence
+s6bodylink: https://nollalinja.fi/turvakoti/
 
 s6bodylinktext: "täältä."
 
-s7heading: "Bio"
+s7heading: "Ohjaaja"
 s7subheading: "Iris Olsson"
 s7subheading2: "Ohjaaja"
 s7body1: "Iris Olsson on kotimainen elokuvaohjaaja ja dokumentaristi. Hän on ohjannut kansainvälisesti palkittuja elokuvia ja mainoksia eri alustoille sekä kotimaisen yleisön suosion saavuttaneita TV-sarjoja. "
 
 s7body2: "Ohjaamisen lisäksi hän on työskennellyt dramaturgina, asiantuntijana Suomen elokuvasäätiössä sekä DocPoint elokuvajuhlien taiteellisena johtajana. Olsson haluaa kertoa tarinoita, jotka kuvaavat ihmisissä olevaa sisäisestä voimaa ja kauneutta."
 
-s8heading: "Photo Gallery"
+s8heading: "Kuvagalleria"
 
 ---

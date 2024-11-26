@@ -1,8 +1,8 @@
 ---
-import MainLayout from "../layouts/main-layout.astro";
+import FullLayout from "../layouts/full-page-layout.astro";
 import { getEntry } from "astro:content";
 
-const en = await getEntry("main", "trailer_en");
+const en = await getEntry("main", "en");
 ---
 
-<MainLayout content={en} title="Life at the Ringside" />
+<FullLayout content={en} title="Life at the Ringside" />

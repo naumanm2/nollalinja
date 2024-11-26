@@ -1,8 +1,0 @@
----
-import FullLayout from "../layouts/full-page-layout.astro";
-import { getEntry } from "astro:content";
-
-const en = await getEntry("main", "en");
----
-
-<FullLayout content={en} title="Life at the Ringside" />
